@@ -21,6 +21,7 @@ let currentSlideIndex = 0; // Index du slide actuel
 
 // Gestionnaire d'événement pour la flèche gauche
 document.querySelector('.arrow_left').addEventListener('click', function() {
+	console.log('Flèche gauche cliquée');
     if (currentSlideIndex === 0) {
         currentSlideIndex = slides.length - 1; // Revenir à la fin si on est au début
     } else {
@@ -31,6 +32,7 @@ document.querySelector('.arrow_left').addEventListener('click', function() {
 
 // Gestionnaire d'événement pour la flèche droite
 document.querySelector('.arrow_right').addEventListener('click', function() {
+	console.log('Flèche droite cliquée');
     if (currentSlideIndex === slides.length - 1) {
         currentSlideIndex = 0; // Revenir au début si on est à la fin
     } else {
